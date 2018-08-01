@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+div#wrap header{
+	width: 100%;
+	height: 80px;
+	background: purple;
+}
+
+div#wrap{
+	width: 980px;
+	height: auto;
+	margin: auto;
+}
+
+header > figure{ /* > pour indiquer que figure est l'enfant direct de header */
+	width: 150px;
+	height: 80px;
+	background: grey;
+}
+
+
+
+section{
+	width: 100%;
+	height: 250px;
+}
+
+
+section > article{
+	width: 390px;
+	height: 250px;
+	float: left;
+	background: orange;
+	color: white;
+	padding: 10px;
+	/*border: 0.5px solid black;*/
+}
+
+
+main > section:nth-child(2) > article{ /* pour indiquer que les articles de la 2ème section = 1/3 et s'aligne) */
+	background: yellow;
+	width: 50%;
+}
+
+
+
+main > section:nth-child(3) > article{
+	background: pink;
+	width: 33.33%;
+}
+
+
+
+/* main > section:nth-child(3) > figure{
+	background: brown;
+} */
+
+
+section > figure{
+	width: 390px;
+	height: 250px;
+	background: blue;
+	float: right;
+}
+
+
+
+/*
+main > section:nth-child(4) > article{
+	background: crimson;
+	width: 25%;
+} */
+
+
+
+main{
+	width: 780px;
+	height: auto;
+	float: left;
+	background: orangered;
+}
+
+
+aside{
+	width: 200px;
+	height: 778px;
+	background: turquoise;
+	float: right;
+}
+
+
+
+aside > div{
+	width: 200px;
+	height: 259px;
+	border-bottom: 1px solid black;
+}
+
+
+div#carrousel{
+	width: 100%;
+	height: 200px;
+	background: black;
+}
+
+
+footer{
+	width: 100%;
+	height: 80px;
+	background: tomato;
+	float: left;  /* par définition, footer est en haut. Il faut lui dire d'aller en bas... */
+}
+
+
+
+
+
+
+
